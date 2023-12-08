@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+:root {
+  --clr-primary: #141313;
+  --clr-primary-hover: rgb(65, 61, 61);
+  --clr-secondary: #fcf9f9;
+  --clr-secondary-hover: #dbd8d8;
+  --clr-hover: #ff0000;
+  --clr-grey: #615f5f;
+  --clr-gallery-hover: rgba(20, 19, 19, 0.875);
+  --clr-success: #abff2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+body {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: normal;
+  color: var(--clr-primary);
+  line-height: 1.875;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo-image {
+  width: 15rem;
+  object-fit: contain;
+}
+
+.header-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100dvh;
+  width: 285px;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 4;
+  background-color: var(--clr-primary);
+}
+
+.header-container.open {
+  transform: translateX(0);
+}
+
+.page {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 1rem 10rem 1rem;
+}
+
+.page:nth-child(odd) {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+
+.page:nth-child(odd) .see-all-btn {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+
+.page:nth-child(even) {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+
+.page:nth-child(even) .see-all-btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+
+.page-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+footer {
+  color: var(--clr-grey);
+  background-color: var(--clr-primary);
+  border-top: 1px solid var(--clr-secondary-hover);
+}
+footer span {
+  text-align: center;
+}
+
+footer a {
+  color: var(--clr-secondary-hover);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--clr-hover);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .logo-image {
+    width: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,19 @@
+.nav-item {
+  cursor: pointer;
+  color: var(--clr-secondary);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  color: var(--clr-secondary-hover);
+}
+
+.active {
+  color: var(--clr-hover);
+  text-decoration: none;
+}
+
+.nav-item a {
+  position: relative;
+  transition: all 0.3s ease;
+}

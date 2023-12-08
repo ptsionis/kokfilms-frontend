@@ -1,0 +1,54 @@
+.burger {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  left: 15px;
+  margin: 15px 0;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.burger span {
+  position: absolute;
+  height: 7px;
+  width: 35px;
+  background-color: var(--clr-grey);
+  border-radius: 9px;
+  transition: all 0.25s ease;
+}
+
+.burger:hover span {
+  background-color: var(--clr-hover);
+}
+
+.burger span:nth-child(1) {
+  top: 0px;
+}
+
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+  top: 12px;
+}
+
+.burger span:nth-child(4) {
+  top: 24px;
+}
+
+.burger.open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+}
+
+.burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.burger.open span:nth-child(4) {
+  top: 12px;
+  width: 0%;
+}

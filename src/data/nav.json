@@ -1,0 +1,37 @@
+[
+  {
+    "code": "home",
+    "nameel": "ΑΡΧΙΚΗ",
+    "nameen": "HOME"
+  },
+  {
+    "code": "music-videos",
+    "nameel": "ΒΙΝΤΕΟ ΚΛΙΠΣ",
+    "nameen": "MUSIC VIDEOS"
+  },
+  {
+    "code": "corporate",
+    "nameel": "ΕΤΑΙΡΙΚΑ ΒΙΝΤΕΟ",
+    "nameen": "CORPORATE PROMOS"
+  },
+  {
+    "code": "christenings",
+    "nameel": "ΒΑΦΤΙΣΕΙΣ",
+    "nameen": "CHRISTENINGS"
+  },
+  {
+    "code": "travel",
+    "nameel": "TRAVEL CINEMATICS",
+    "nameen": "TRAVEL CINEMATICS"
+  },
+  {
+    "code": "photography",
+    "nameel": "ΦΩΤΟΓΡΑΦΙΚΑ ΑΛΜΠΟΥΜ",
+    "nameen": "PHOTOGRAPHY ALBUMS"
+  },
+  {
+    "code": "contact",
+    "nameel": "ΕΠΙΚΟΙΝΩΝΙΑ",
+    "nameen": "CONTACT"
+  }
+]

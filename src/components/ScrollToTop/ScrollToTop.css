@@ -1,0 +1,21 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  padding: 5px;
+  background-color: var(--clr-grey);
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--clr-hover);
+}
+
+@media screen and (max-width: 576px) {
+  .scroll-to-top {
+    bottom: 35px;
+  }
+}

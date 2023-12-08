@@ -1,0 +1,43 @@
+.name {
+  font-size: 5.5em;
+  text-align: center;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.intro {
+  color: var(--clr-primary-hover);
+  font-size: 2.5em;
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .name {
+    font-size: 4em;
+  }
+
+  .intro {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .name {
+    font-size: 3em;
+  }
+
+  .intro {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .intro {
+    font-size: 1.5em;
+  }
+}

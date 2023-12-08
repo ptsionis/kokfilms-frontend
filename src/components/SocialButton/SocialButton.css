@@ -1,0 +1,60 @@
+.social-btn {
+  position: relative;
+  padding: 7.5px;
+  transition: all .3s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--clr-secondary-hover);
+}
+
+.social-btn::after {
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+}
+
+.social-btn:hover::after {
+  border-color: var(--clr-primary-hover);
+  width: 100%;
+  animation: roundedBorderAnimation .3s ease;
+}
+
+.social-btn-dark {
+  position: relative;
+  padding: 7.5px;
+  transition: all .3s ease;
+}
+
+.social-btn-dark:hover {
+    background-color: var(--clr-secondary-hover);
+}
+
+.social-btn-dark::after {
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+}
+
+.social-btn-dark:hover::after {
+  border-color: var(--clr-primary-hover);
+  width: 100%;
+  animation: roundedBorderAnimation .3s ease;
+}
+
+@keyframes roundedBorderAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

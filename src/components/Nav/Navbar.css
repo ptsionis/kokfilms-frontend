@@ -1,0 +1,12 @@
+.nav-list {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.lang-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
