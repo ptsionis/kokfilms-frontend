@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 
-import Gallery from "../Gallery/Gallery";
-import SeeAllButton from "../SeeAllButton/SeeAllButton";
-import { NavContext } from "../../App";
-import photoCategories from "../../data/photoCategories.json";
-import { fetchMediaUrls } from "../../apiService";
+import Gallery from "../components/Gallery/Gallery";
+import SeeAllButton from "../components/SeeAllButton/SeeAllButton";
+import { NavContext } from "../App";
+import photoCategories from "../data/photoCategories.json";
+import { fetchMediaUrls } from "../apiService";
 
-import translations from "../../translations/translations.json";
+import translations from "../translations/translations.json";
 
 export default function PhotographyPage() {
   const language = useContext(NavContext).language;

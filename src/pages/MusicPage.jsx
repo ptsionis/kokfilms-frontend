@@ -1,21 +1,20 @@
 import React, { useState, useEffect, useContext } from "react";
 
-import YouTubeFrame from "../YouTubeFrame/YouTubeFrame";
-import SeeAllButton from "../SeeAllButton/SeeAllButton";
-import { NavContext } from "../../App";
-import { fetchYouTubeInfo } from "../../apiService";
+import YouTubeFrame from "../components/YouTubeFrame/YouTubeFrame";
+import SeeAllButton from "../components/SeeAllButton/SeeAllButton";
+import { NavContext } from "../App";
+import { fetchYouTubeInfo } from "../apiService";
 
-import translations from "../../translations/translations.json";
+import translations from "../translations/translations.json";
 
-export default function CorporatePage() {
+export default function MusicPage() {
   const language = useContext(NavContext).language;
-  let categoryTitle = translations[language].corporateTitle;
-  language === "el" ? "ΕΤΑΙΡΙΚΑ ΒΙΝΤΕΟ" : "CORPORATE PROMOS";
+  let categoryTitle = translations[language].musicTitle;
   const [youTubeInfo, setYouTubeInfo] = useState([]);
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    fetchYouTubeInfo("corporate")
+    fetchYouTubeInfo("clips")
       .then((data) => {
         setYouTubeInfo(data);
       })
@@ -27,7 +26,7 @@ export default function CorporatePage() {
   const displayedVideos = showAll ? youTubeInfo : youTubeInfo.slice(0, 2);
 
   return (
-    <section className="page" name="corporate">
+    <section className="page" name="music-videos">
       <h2 className="page-title">{categoryTitle}</h2>
       <ul className="container-fluid row justify-content-center">
         {displayedVideos.map((url) => {

@@ -1,11 +1,11 @@
 import { React, useContext } from "react";
 
-import SocialButton from "../SocialButton/SocialButton";
-import ContactForm from "../ContactForm/ContactForm";
-import { NavContext } from "../../App";
-import social from "../../data/social.json";
+import SocialButton from "../components/SocialButton/SocialButton";
+import ContactForm from "../components/ContactForm/ContactForm";
+import { NavContext } from "../components/../App";
+import social from "../components/../data/social.json";
 
-import translations from "../../translations/translations.json";
+import translations from "../translations/translations.json";
 
 export default function ContactPage() {
   const language = useContext(NavContext).language;

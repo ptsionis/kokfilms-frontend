@@ -1,0 +1,13 @@
+.loader-bg {
+  background-color: var(--clr-secondary) !important;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loader-bg.fade-out {
+  opacity: 0;
+}
+
+.spinner-border {
+  color: var(--clr-primary);
+}
