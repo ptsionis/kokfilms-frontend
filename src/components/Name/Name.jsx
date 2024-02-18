@@ -15,7 +15,7 @@ const Name = () => {
         <h1 className="name">KOKFILMS</h1>
         <h2 className="intro">{translations[language].intro1}</h2>
         <h2 className="intro">{translations[language].intro2}</h2>
-        <h2 className="intro">{translations[language].intro3}</h2>
+        <h3 className="intro-location">{translations[language].intro3}</h3>
       </div>
       <img
         src={"/logos/icon-dark.webp"}

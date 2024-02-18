@@ -116,7 +116,7 @@ export default function ContactForm({ pageColor }) {
       <span
         className="form-success d-flex justify-content-center mt-3"
         style={{ visibility: formSuccess === true ? "visible" : "hidden" }}>
-        value={translations[language].contactSuccess}
+        {translations[language].contactSuccess}
       </span>
     </>
   );

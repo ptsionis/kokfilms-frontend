@@ -1,7 +1,7 @@
 {
   "el": {
-    "intro1": "ΒΙΝΤΕΟΓΡΑΦΙΑ",
-    "intro2": "ΦΩΤΟΓΡΑΦΙΑ",
+    "intro1": "ΒΙΝΤΕΟΓΡΑΦΟΣ",
+    "intro2": "ΦΩΤΟΓΡΑΦΟΣ",
     "intro3": "ΘΕΣΣΑΛΟΝΙΚΗ",
     "seeAllBtn": "ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ",
     "musicTitle": "ΒΙΝΤΕΟ ΚΛΙΠΣ",
@@ -25,8 +25,8 @@
     "contactSuccess": "Το μήνυμά σας υποβλήθηκε με επιτυχία!"
   },
   "en": {
-    "intro1": "VIDEOGRAPHY",
-    "intro2": "PHOTOGRAPHY",
+    "intro1": "VIDEOGRAPHER",
+    "intro2": "PHOTOGRAPHER",
     "intro3": "THESSALONIKI",
     "seeAllBtn": "SEE MORE",
     "musicTitle": "MUSIC VIDEOS",
